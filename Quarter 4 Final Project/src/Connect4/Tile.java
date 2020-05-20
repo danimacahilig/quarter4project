@@ -22,5 +22,38 @@ import java.awt.image.*;
 import java.awt.geom.AffineTransform;
 
 public class Tile {
-	int test;
+	private int row, col;
+	private boolean one;
+	
+	public Tile(int r, int c, boolean isPlayerOne) {
+		row = r;
+		col = c;
+		one = isPlayerOne;
+	}
+	
+	public int getRow() {
+		return row;
+	}
+	
+	public int getCol() {
+		return col;
+	}
+
+	public boolean isOne() {
+		return one;
+	}
+
+	public void setOne(boolean one) {
+		this.one = one;
+	}
+
+	public void setRow(int row) {
+		this.row = row;
+	}
+
+	public void setCol(int col) {
+		this.col = col;
+	}
+	
+	
 }
